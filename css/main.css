@@ -285,31 +285,31 @@ body {
 }
 
 .grid > div.I {
-  background-color: #6be1ec;
+  	background-color: #70c0ce;
 }
 
 .grid > div.J {
-  background-color: #5eb0f3;
+  	background-color: #ac3ea1;
 }
 
 .grid > div.L {
-  background-color: #f2c35b;
+ background-color: #f2c35b;
 }
 
 .grid > div.O {
-  background-color: #f7e562;
+	background-color: #f3e686;
 }
 
 .grid > div.S {
-  background-color: #7be17b;
+ 	background-color: #54a254;
 }
 
 .grid > div.Z {
-  background-color: #de5c6b;
+ 	background-color: #de5c6b;
 }
 
 .grid > div.T {
-  background-color: #b276f3;
+ background-color: #9137f1;
 }
 
 .grid > div.I,

@@ -1,0 +1,346 @@
+/* Base */
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #141414;
+}
+body a, body button {
+  color: #141414;
+  font-weight: 500;
+  font-size: 18px;
+}
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.container {
+  min-width: 280px;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 766.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 100%;
+}
+
+/* Blocks */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  height: 100svh;
+  background: linear-gradient(45deg, rgb(152, 83, 198) 0%, rgb(237, 97, 97) 48%, rgb(255, 196, 113) 100%);
+  font-family: "Pacifico";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(20, auto);
+  padding: 0.6vh;
+  gap: 0.3vh;
+  border-radius: 0.6vh;
+  background-color: rgba(51, 51, 51, 0.401);
+}
+
+.grid > div {
+  --cell-size: min(4.5vh, 7.5vw);
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border-radius: 0.3vh;
+  background-color: rgba(116, 53, 53, 0.464);
+}
+
+.grid > div.ghost {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid > div.I {
+  background-color: #6be1ec;
+}
+
+.grid > div.J {
+  background-color: #5eb0f3;
+}
+
+.grid > div.L {
+  background-color: #f2c35b;
+}
+
+.grid > div.O {
+  background-color: #f7e562;
+}
+
+.grid > div.S {
+  background-color: #7be17b;
+}
+
+.grid > div.Z {
+  background-color: #de5c6b;
+}
+
+.grid > div.T {
+  background-color: #b276f3;
+}
+
+.grid > div.I,
+.grid > div.J,
+.grid > div.L,
+.grid > div.O,
+.grid > div.S,
+.grid > div.T,
+.grid > div.Z,
+.grid > div.ghost,
+.grid > div.sad {
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.2), inset -2px -2px 2px rgba(1, 8, 89, 0.2);
+}
+
+.grid > div.sad {
+  background-color: #f2c35b;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.grid > div.hide {
+  animation: hide 0.5s;
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(0.8) rotate(30deg);
+  }
+  45% {
+    transform: scale(0.8) rotate(-30deg);
+  }
+  90% {
+    transform: scale(1) rotate(0);
+  }
+}
